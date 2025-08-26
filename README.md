@@ -31,7 +31,8 @@ A **Spotify-inspired music player** built with **HTML, CSS, and JavaScript**. Th
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/RaneDivya/Spotify-Clone-music-streaming-platform.git```
+git clone https://github.com/RaneDivya/Spotify-Clone-music-streaming-platform.git
+```
 
 2. Navigate into the project folder:
 
