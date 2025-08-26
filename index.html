@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FONT LINKS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- ICON LINKS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- FAVICON LINK -->
+    <link rel="icon" type="image/x-icon" href="favicon_io (2)/favicon-16x16.png">
+    <!-- CUSTOM LINKS -->
+    <link rel="stylesheet" href="style/general.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Spotify Clone</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar d-flex bg-black">
+      <img src="Images/hamburger.svg" class="invert hamburger" alt="">
+      <img src="Images/close.svg" class="invert close" alt="">
+      <a href="#"><img class="invert logo" src="Images/logo.svg" alt="logo"></a>
+      <div class="middle-elements d-flex">
+        <button><img class="invert" src="Images/home.svg" alt="home"></button>
+        <div class="search-wrapper d-flex">
+          <img class="invert" src="Images/search.svg" alt="search">
+          <input type="text" name="search" placeholder="What do you want to play?" id="search-bar">
+          <a href="#"><img class="invert" src="Images/browse.svg" alt=""></a>
+        </div>
+      </div>
+      <div class="end-elements d-flex">
+        <a href="#">Sign up</a>
+        <button>Log in</button>
+        <a href="#"><img class="invert responsive-logo" src="Images/logo.svg" alt="logo"></a>
+      </div>
+    </nav>
+    <div class="search-results d-flex" id="search-results">
+    </div>
+  </header>
+
+  <main class="bg-black d-flex">
+    <div class="left bg-grey border-round m-1 p-1">
+
+      <div class="library">
+        <div class="heading d-flex">
+          <img src="Images/library.svg" class="invert" alt="">
+          <h2>Your Library</h2>
+        </div>
+        <div class="playlist bg-grey-2">
+        <div class="songlist">
+          <ul>
+          </ul>
+        </div>
+        </div>
+        <div class="footer d-flex p-1 m-1">
+          <div class=" footer-row d-flex">
+            <div><a href="https://www.spotify.com/in-en/legal/"><span>Legal</span></a></div>
+            <div><a href="https://www.spotify.com/in-en/safetyandprivacy/"><span>Safety & Privacy Center</span></a></div>
+            <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/"><span>Privacy Policy</span></a></div>
+            <div><a href="https://www.spotify.com/in-en/legal/cookies-policy/"><span>Cookies</span></a></div>
+          </div>
+          <div class=" footer-row d-flex">
+            <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"><span>About Ads</span></a></div>
+            <div><a href="https://www.spotify.com/in-en/accessibility/"><span>Accessibility</span></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="right border-round m-1 p-1">
+      <div class="popular-artists">
+        <div class="title d-flex">
+          <a href="#"><h1>Popular artists</h1></a>
+          <a href="#"><h4>Show all</h6></a>
+        </div>
+        <div class="card-container d-flex">
+        </div>
+      </div>
+      <div class="playbar">
+        <div class="seekbar">
+          <div class="circle">
+            
+          </div>
+        </div>
+        <div class="song-details d-flex">
+          <div class="song-info"></div>
+          <div class="song-buttons d-flex">
+            <img id="previous" src="Images/prevsong.svg" alt="">
+            <img id="play" src="Images/play.svg" alt="" width="30px">
+            <img id="next" src="Images/nextsong.svg" alt="">
+          </div>
+          <div class="d-flex timevol">
+            <div class="song-time"></div>
+            <div class="volume d-flex">
+            <img src="Images/volume.svg" class="invert" alt="">
+            <div class="range">
+              <input type="range" name="volume" id="">
+            </div>
+          </div>
+          </div>
+        </div>
+    </div>
+  </main>
+  <script src="Js/script.js"></script>
+</body>
+</html>
